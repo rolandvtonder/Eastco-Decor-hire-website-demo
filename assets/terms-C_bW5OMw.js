@@ -1,0 +1,1 @@
+import{m as o,j as e,T as t}from"./mount-BrhvLqjp.js";import{L as i}from"./LegalPage-BneiDPUR.js";o(e.jsx(i,{eyebrow:"Hire information",title:"Hire terms & conditions.",intro:t.intro,updated:t.updated,sections:t.sections}));

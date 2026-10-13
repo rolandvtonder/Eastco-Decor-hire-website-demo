@@ -1,0 +1,1 @@
+import{m as t,j as i,R as o}from"./mount-BrhvLqjp.js";import{L as r}from"./LegalPage-BneiDPUR.js";t(i.jsx(r,{eyebrow:"Your information",title:"Privacy policy.",intro:o.intro,updated:o.updated,sections:o.sections}));
