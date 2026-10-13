@@ -55,7 +55,7 @@ export function ClosingScene({showQuote = true}: {showQuote?: boolean}) {
         <Sticker className="absolute top-[8%] right-[5%] rotate-[-8deg] md:top-[14%] md:right-[7%]" />
       </div>
 
-      <div className="relative px-4 pt-2 pb-10 sm:px-6 md:min-h-[100svh] md:pt-32 lg:px-8">
+      <div className="relative flex flex-col px-4 pt-2 pb-10 sm:px-6 md:min-h-[100svh] md:pt-32 md:pb-6 lg:px-8">
         <div className="max-w-[34rem]" data-reveal>
           <p className="font-script text-[2.25rem] leading-none text-gold-soft">{cta.eyebrow}</p>
           <h2 id="cta-title" className="mt-3 font-display text-title font-medium">
@@ -99,7 +99,10 @@ export function ClosingScene({showQuote = true}: {showQuote?: boolean}) {
           </ul>
         </div>
 
-        <p className="-mx-1 mt-14 leading-none md:absolute md:inset-x-4 md:bottom-6 md:mx-0 lg:inset-x-6" aria-hidden="true">
+        {/* In the flow, not pinned to the bottom: on wide screens the line is
+            huge, and pinned it rode up over the branch cards. mt-auto still
+            seats it at the foot when there is room; pt-12 keeps a gap when not. */}
+        <p className="-mx-1 mt-14 leading-none md:mx-0 md:mt-auto md:pt-12" aria-hidden="true">
           <span ref={markRef} className="inline-block font-mark leading-[0.8] font-light tracking-[0.02em] whitespace-nowrap text-ivory/95">
             {cta.wordmark}
           </span>
